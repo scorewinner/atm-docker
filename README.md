@@ -18,9 +18,9 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: FORGE
-      FORGE_INSTALLER: "forge-1.19.2-43.1.47-installer.jar"
-      DIFFICULTY: hard
       VERSION: "1.19.2"
+      FORGE_VERSION: "43.1.47"      
+      DIFFICULTY: hard
       OVERRIDE_SERVER_PROPERTIES: "TRUE"
       JVM_XX_OPTS:     -Xms6G -Xmx10G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
       MAX_MEMORY: 16G
@@ -44,7 +44,7 @@ services:
 **NOTE**  
 - Set the volume to the correct directory
 - Download the Server Files from curseforge and move all the files inside to your server directory
-- Use the correct `.jar` file at `FORGE_INSTALLER`
+- Use the correct version in `FORGE_VERSION`
 - set the whitelist an op to your preferences
 
 After that, start the docker container
