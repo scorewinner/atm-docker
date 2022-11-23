@@ -42,9 +42,9 @@ services:
     restart: unless-stopped
 ```
 **NOTE**  
-- Set the volume to the correct directory
-- Download the Server Files from curseforge and move all the files inside to your server directory
-- Use the correct version in `FORGE_VERSION`
-- set the whitelist an op to your preferences
+- Set the volume to the correct directory where your server files will be placed
+- Download the Server Files from [Curseforge](https://www.curseforge.com/minecraft/modpacks/all-the-mods-8/files/all?filter-game-version=1738749986%3a73407) and move all the files inside to your server directory
+- Use the correct version in `FORGE_VERSION` (you find the Forge Version in the changelogs of the Mod files on [the Curseforge page](https://www.curseforge.com/minecraft/modpacks/all-the-mods-8/files)
+- set the whitelist and op to your preferences
 
 After that, start the docker container
