@@ -48,3 +48,7 @@ services:
 - set the whitelist and op to your preferences
 
 After that, start the docker container
+
+
+## Updating the Server
+Check the [Updating.md](https://github.com/scorewinner/atm-docker/blob/main/Updating.md)
